@@ -263,7 +263,7 @@ export default function AhaAiUltimate() {
 
     try {
       const systemPrompt = activeTab === "chat" ? "" : MODEL_PROMPTS[activeTab];
-      const response = await fetch("http://localhost:9000/api/generate", {
+      const response = await fetch("https://aha-ai-back.onrender.com/api/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
